@@ -1,5 +1,5 @@
 
-> Open this page at [https://gerardfp.github.io/imagecompare/](https://gerardfp.github.io/imagecompare/)
+> Open this page at [https://gerardfp.github.io/imagecompare/](https://gerardfp.github.io/pxt-uscreen/)
 
 ## Use as Extension
 
