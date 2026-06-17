@@ -7,6 +7,7 @@ namespace UScreen {
      */
     //% blockId=screen_is_on_screen
     //% block="is on screen $i"
+    //% i.shadow="screen_image_picker"
     //% weight=99
     export function isOnScreen(i: Image): boolean {
 
