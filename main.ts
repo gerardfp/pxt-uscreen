@@ -1,5 +1,13 @@
+//% block="Soroban" color="#8B4513" weight=100 icon="\uf2a1"
 namespace Screen {
-    
+
+     /**
+     * Compares the image on the screen with another image.
+     * @param i the Image to compare to
+     */
+    //% blockId=screen_is_on_screen
+    //% block="is on screen $i"
+    //% weight=99
     export function isOnScreen(i: Image): boolean {
 
         if (i.pixel(0, 0) != led.point(0, 0)) return false;
