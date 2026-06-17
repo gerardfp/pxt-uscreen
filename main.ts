@@ -1,5 +1,5 @@
-//% block="Soroban" color="#8B4513" weight=100 icon="\uf2a1"
-namespace Screen {
+//% block="UScreen" color="#8B4513" weight=100 icon="\uf2a1"
+namespace UScreen {
 
      /**
      * Compares the image on the screen with another image.
