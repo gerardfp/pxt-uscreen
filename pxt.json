@@ -1,6 +1,6 @@
 {
     "name": "Screen",
-    "description": "",
+    "description": "Utils to obtain what is on the screen",
     "dependencies": {
         "core": "*",
         "radio": "*",
