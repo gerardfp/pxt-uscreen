@@ -6,9 +6,8 @@ namespace UScreen {
      * @param i the Image to compare to
      */
     //% blockId=screen_is_on_screen
-    //% block="is on screen $i"
+    //% block="is on screen"
     //% imageLiteral=1
-    //% weight=99
     export function isOnScreen(i: string): boolean {
 
         let im = <Image><any>i;
