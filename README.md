@@ -1,5 +1,5 @@
 
-> Open this page at [https://gerardfp.github.io/pxt-uscreen/](https://gerardfp.github.io/pxt-uscreen/)
+> Open this page at [https://gerardfp.github.io/pxt-superled/](https://gerardfp.github.io/pxt-superled/)
 
 ## Use as Extension
 
