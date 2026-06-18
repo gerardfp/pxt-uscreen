@@ -1,4 +1,6 @@
-﻿{
+{
   "SuperLED.isOnScreen": "Compares the image on the screen with another image.",
-  "SuperLED.isOnScreen|param|i": "the Image to compare to"
+  "SuperLED.isOnScreen|param|i": "the image to compare to",
+  "SuperLED.setRandom": "Randomly turns on the specified LEDs.",
+  "SuperLED.setRandom|param|i": "the LEDs to randomly turn on"
 }

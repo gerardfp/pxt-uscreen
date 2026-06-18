@@ -1,5 +1,6 @@
-﻿{
-  "SuperLED.isOnScreen|block": "estÃ¡ en pantalla $i",
+{
+  "SuperLED.isOnScreen|block": "está en pantalla $i",
+  "SuperLED.setRandom|block": "encender aleatoriamente estos leds $i",
   "SuperLED|block": "SuperLED",
   "{id:category}SuperLED": "SuperLED"
 }

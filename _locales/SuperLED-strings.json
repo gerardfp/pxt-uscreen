@@ -1,5 +1,6 @@
-﻿{
+{
   "SuperLED.isOnScreen|block": "is on screen $i",
+  "SuperLED.setRandom|block": "randomly turn on these LEDs $i",
   "SuperLED|block": "SuperLED",
   "{id:category}SuperLED": "SuperLED"
 }

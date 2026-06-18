@@ -3,10 +3,10 @@ namespace SuperLED {
 
      /**
      * Compares the image on the screen with another image.
-     * @param i the Image to compare to
+     * @param i the image to compare to
      */
-    //% blockId=screen_is_on_screen
-    //% block="is on screen"
+    //% blockId=image_is_on_screen
+    //% block="is on screen $i"
     //% imageLiteral=1
     export function isOnScreen(i: string): boolean {
 
@@ -17,5 +17,23 @@ namespace SuperLED {
             }
         }
         return true;
+    }
+
+    /**
+     * Randomly turns on the specified LEDs.
+     * @param i the LEDs to randomly turn on
+     */
+    //% blockId=random_on
+    //% block="randomly turn on these LEDs $i"
+    //% imageLiteral=1
+    export function setRandom(i: string): void {
+        let im2 = <Image><any>i;
+        for (let m = 0; m < 5; m++) {
+            for (let n = 0; n < 5; n++) {
+                if (im2.pixel(m,n) && Math.randomBoolean()) {
+                    led.plot(m, n);
+                }
+            }
+        }
     }
 }

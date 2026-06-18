@@ -1,4 +1,6 @@
-﻿{
+{
   "SuperLED.isOnScreen": "Compara la imatge de la pantalla amb una altra imatge.",
-  "SuperLED.isOnScreen|param|i": "la imatge amb quÃ¨ comparar"
+  "SuperLED.isOnScreen|param|i": "la imatge amb què comparar",
+  "SuperLED.setRandom": "Encén aleatòriament els LED especificats.",
+  "SuperLED.setRandom|param|i": "els LED a encendre aleatòriament"
 }
