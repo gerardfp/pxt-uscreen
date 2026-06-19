@@ -8,9 +8,9 @@ namespace SuperLED {
     //% blockId=image_is_on_screen
     //% block="is on screen"
     //% imageLiteral=1
-    export function isOnScreen(i: string): boolean {
+    export function isOnScreen(leds: string): boolean {
 
-        let im = <Image><any>i;
+        let im = <Image><any>leds;
         for (let k = 0; k < 5; k++){
             for (let l = 0; l < 5; l++) {
                 if (im.pixel(k, l) != led.point(k, l)) return false;
@@ -26,8 +26,8 @@ namespace SuperLED {
     //% blockId=random_on
     //% block="randomly turn on these LEDs"
     //% imageLiteral=1
-    export function setRandom(i: string): void {
-        let im2 = <Image><any>i;
+    export function setRandom(leds: string): void {
+        let im2 = <Image><any>leds;
         for (let m = 0; m < 5; m++) {
             for (let n = 0; n < 5; n++) {
                 if (im2.pixel(m,n) && Math.randomBoolean()) {
@@ -44,8 +44,8 @@ namespace SuperLED {
     //% blockId=turn_on
     //% block="turn on these LEDs"
     //% imageLiteral=1
-    export function turnOn(i: string): void {
-        let im2 = <Image><any>i;
+    export function turnOn(leds: string): void {
+        let im2 = <Image><any>leds;
         for (let m = 0; m < 5; m++) {
             for (let n = 0; n < 5; n++) {
                 if (im2.pixel(m,n)) {
@@ -62,8 +62,8 @@ namespace SuperLED {
     //% blockId=turn_off
     //% block="turn off these LEDs"
     //% imageLiteral=1
-    export function turnOff(i: string): void {
-        let im2 = <Image><any>i;
+    export function turnOff(leds: string): void {
+        let im2 = <Image><any>leds;
         for (let m = 0; m < 5; m++) {
             for (let n = 0; n < 5; n++) {
                 if (im2.pixel(m,n)) {
@@ -80,8 +80,8 @@ namespace SuperLED {
     //% blockId=are_on
     //% block="are turned on these LEDs"
     //% imageLiteral=1
-    export function areOn(i: string): boolean {
-        let im2 = <Image><any>i;
+    export function areOn(leds: string): boolean {
+        let im2 = <Image><any>leds;
         for (let m = 0; m < 5; m++) {
             for (let n = 0; n < 5; n++) {
                 if (im2.pixel(m, n) && !led.point(m, n)) {
@@ -99,8 +99,8 @@ namespace SuperLED {
     //% blockId=are_off
     //% block="are turned off these LEDs"
     //% imageLiteral=1
-    export function areOff(i: string): boolean {
-        let im2 = <Image><any>i;
+    export function areOff(leds: string): boolean {
+        let im2 = <Image><any>leds;
         for (let m = 0; m < 5; m++) {
             for (let n = 0; n < 5; n++) {
                 if (im2.pixel(m, n) && led.point(m, n)) {
@@ -118,8 +118,8 @@ namespace SuperLED {
     //% blockId=toggle
     //% block="toggle these LEDs"
     //% imageLiteral=1
-    export function toggle(i: string): void {
-        let im2 = <Image><any>i;
+    export function toggle(leds: string): void {
+        let im2 = <Image><any>leds;
         for (let m = 0; m < 5; m++) {
             for (let n = 0; n < 5; n++) {
                 if (im2.pixel(m, n)) {
