@@ -24,10 +24,10 @@ namespace SuperLED {
      * @param i the LEDs to randomly turn on
      */
     //% blockId=random_on
-    //% block="randomly turn on these LEDs"
+    //% block="randomly turn on these LEDs $leds"
     //% imageLiteral=1
-    export function setRandom(leds: string): void {
-        let im2 = <Image><any>leds;
+    export function setRandom(leds: Image): void {
+        let im2 = leds;
         for (let m = 0; m < 5; m++) {
             for (let n = 0; n < 5; n++) {
                 if (im2.pixel(m,n) && Math.randomBoolean()) {
