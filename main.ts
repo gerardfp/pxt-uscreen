@@ -1,4 +1,4 @@
-//% block="SuperLED" color="#ea2d29" weight=100 icon="\uf5bd"
+//% block="SuperLED" color="#ea2d29" weight=100 icon="\uf2a1"
 namespace SuperLED {
 
     /**
