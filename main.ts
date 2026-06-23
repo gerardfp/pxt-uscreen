@@ -30,6 +30,47 @@ namespace SuperLED {
     }
 
     /**
+     * Checks if all the specified LEDs are turned off.
+     * @param leds the LEDs to check
+     */
+    //% blockId=are_off
+    //% block="are turned off these LEDs"
+    //% imageLiteral=1
+    //% imageLiteralScale=0.6
+    export function areOff(leds: string): boolean {
+        let im = _createImage(leds);
+        for (let m = 0; m < 5; m++) {
+            for (let n = 0; n < 5; n++) {
+                if (im.pixel(m, n) && led.point(m, n)) {
+                    return false;
+                }
+            }
+        }
+        return true
+    }
+
+    /**
+     * Checks if all the specified LEDs are turned on.
+     * @param leds the LEDs to check
+     */
+    //% blockId=are_on
+    //% block="are turned on these LEDs"
+    //% imageLiteral=1
+    //% imageLiteralScale=0.6
+    export function areOn(leds: string): boolean {
+        let im = _createImage(leds);
+        for (let m = 0; m < 5; m++) {
+            for (let n = 0; n < 5; n++) {
+                if (im.pixel(m, n) && !led.point(m, n)) {
+                    return false;
+                }
+            }
+        }
+        return true
+    }
+
+
+    /**
      * Randomly turns on the specified LEDs.
      * @param leds the LEDs to randomly turn on
      */
@@ -43,25 +84,6 @@ namespace SuperLED {
         for (let m = 0; m < 5; m++) {
             for (let n = 0; n < 5; n++) {
                 if (im.pixel(m, n) && Math.randomBoolean()) {
-                    led.plot(m, n);
-                }
-            }
-        }
-    }
-
-    /**
-     * Turns on the specified LEDs.
-     * @param leds the LEDs to turn on
-     */
-    //% blockId=turn_on
-    //% block="turn on these LEDs"
-    //% imageLiteral=1
-    //% imageLiteralScale=0.6
-    export function turnOn(leds: string): void {
-        let im = _createImage(leds);
-        for (let m = 0; m < 5; m++) {
-            for (let n = 0; n < 5; n++) {
-                if (im.pixel(m, n)) {
                     led.plot(m, n);
                 }
             }
@@ -88,44 +110,25 @@ namespace SuperLED {
     }
 
     /**
-     * Checks if all the specified LEDs are turned on.
-     * @param leds the LEDs to check
+     * Turns on the specified LEDs.
+     * @param leds the LEDs to turn on
      */
-    //% blockId=are_on
-    //% block="are turned on these LEDs"
+    //% blockId=turn_on
+    //% block="turn on these LEDs"
     //% imageLiteral=1
     //% imageLiteralScale=0.6
-    export function areOn(leds: string): boolean {
+    export function turnOn(leds: string): void {
         let im = _createImage(leds);
         for (let m = 0; m < 5; m++) {
             for (let n = 0; n < 5; n++) {
-                if (im.pixel(m, n) && !led.point(m, n)) {
-                    return false;
+                if (im.pixel(m, n)) {
+                    led.plot(m, n);
                 }
             }
         }
-        return true
     }
 
-    /**
-     * Checks if all the specified LEDs are turned off.
-     * @param leds the LEDs to check
-     */
-    //% blockId=are_off
-    //% block="are turned off these LEDs"
-    //% imageLiteral=1
-    //% imageLiteralScale=0.6
-    export function areOff(leds: string): boolean {
-        let im = _createImage(leds);
-        for (let m = 0; m < 5; m++) {
-            for (let n = 0; n < 5; n++) {
-                if (im.pixel(m, n) && led.point(m, n)) {
-                    return false;
-                }
-            }
-        }
-        return true
-    }
+
 
     /**
      * Toggles the specified LEDs.
