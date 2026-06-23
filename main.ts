@@ -18,6 +18,7 @@ namespace SuperLED {
     //% blockId=image_is_on_screen
     //% block="is on screen"
     //% imageLiteral=1
+    //% imageLiteralScale=0.6
     export function isOnScreen(leds: string): boolean {
         let im = _createImage(leds);
         for (let k = 0; k < 5; k++) {
@@ -55,6 +56,7 @@ namespace SuperLED {
     //% blockId=turn_on
     //% block="turn on these LEDs"
     //% imageLiteral=1
+    //% imageLiteralScale=0.6
     export function turnOn(leds: string): void {
         let im = _createImage(leds);
         for (let m = 0; m < 5; m++) {
@@ -73,6 +75,7 @@ namespace SuperLED {
     //% blockId=turn_off
     //% block="turn off these LEDs"
     //% imageLiteral=1
+    //% imageLiteralScale=0.6
     export function turnOff(leds: string): void {
         let im = _createImage(leds);
         for (let m = 0; m < 5; m++) {
@@ -91,6 +94,7 @@ namespace SuperLED {
     //% blockId=are_on
     //% block="are turned on these LEDs"
     //% imageLiteral=1
+    //% imageLiteralScale=0.6
     export function areOn(leds: string): boolean {
         let im = _createImage(leds);
         for (let m = 0; m < 5; m++) {
@@ -110,6 +114,7 @@ namespace SuperLED {
     //% blockId=are_off
     //% block="are turned off these LEDs"
     //% imageLiteral=1
+    //% imageLiteralScale=0.6
     export function areOff(leds: string): boolean {
         let im = _createImage(leds);
         for (let m = 0; m < 5; m++) {
@@ -129,6 +134,7 @@ namespace SuperLED {
     //% blockId=toggle
     //% block="toggle these LEDs"
     //% imageLiteral=1
+    //% imageLiteralScale=0.6
     export function toggle(leds: string): void {
         let im = _createImage(leds);
         for (let m = 0; m < 5; m++) {
