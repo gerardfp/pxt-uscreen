@@ -91,6 +91,29 @@ namespace SuperLED {
     }
 
     /**
+     * Toggles the specified LEDs.
+     * @param leds the LEDs to toggle
+     */
+    //% blockId=toggle
+    //% block="toggle these LEDs"
+    //% imageLiteral=1
+    //% imageLiteralScale=0.6
+    export function toggle(leds: string): void {
+        let im = _createImage(leds);
+        for (let m = 0; m < 5; m++) {
+            for (let n = 0; n < 5; n++) {
+                if (im.pixel(m, n)) {
+                    if (led.point(m, n)) {
+                        led.unplot(m, n)
+                    } else {
+                        led.plot(m, n)
+                    }
+                }
+            }
+        }
+    }
+
+    /**
      * Turns off the specified LEDs.
      * @param leds the LEDs to turn off
      */
@@ -130,26 +153,5 @@ namespace SuperLED {
 
 
 
-    /**
-     * Toggles the specified LEDs.
-     * @param leds the LEDs to toggle
-     */
-    //% blockId=toggle
-    //% block="toggle these LEDs"
-    //% imageLiteral=1
-    //% imageLiteralScale=0.6
-    export function toggle(leds: string): void {
-        let im = _createImage(leds);
-        for (let m = 0; m < 5; m++) {
-            for (let n = 0; n < 5; n++) {
-                if (im.pixel(m, n)) {
-                    if (led.point(m, n)) {
-                        led.unplot(m, n)
-                    } else {
-                        led.plot(m, n)
-                    }
-                }
-            }
-        }
-    }
+
 }
