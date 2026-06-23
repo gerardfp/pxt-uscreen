@@ -9,7 +9,13 @@
     "files": [
         "main.blocks",
         "main.ts",
-        "README.md"
+        "README.md",
+        "_locales/ca/SuperLED-strings.json",
+        "_locales/ca/SuperLED-jsdoc-strings.json",
+        "_locales/es/SuperLED-strings.json",
+        "_locales/es/SuperLED-jsdoc-strings.json",
+        "_locales/es-ES/SuperLED-strings.json",
+        "_locales/es-ES/SuperLED-jsdoc-strings.json"
     ],
     "testFiles": [
         "test.ts"
