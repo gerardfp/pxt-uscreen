@@ -1,5 +1,5 @@
 {
-    "name": "SuperLED",
+    "name": "superled",
     "description": "Utils to work with the led screen",
     "dependencies": {
         "core": "*",
